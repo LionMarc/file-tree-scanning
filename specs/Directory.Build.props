@@ -1,0 +1,46 @@
+<Project>
+  <Import Project="$(MSBuildThisFileDirectory)\..\Directory.Build.props"/>
+
+  <ItemGroup>
+    <ProjectReference Include="$(MSBuildThisFileDirectory)\..\testing\FileTreeScanner.Testing\FileTreeScanner.Testing.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Smusdi.Testing"/>
+    <PackageReference Include="Smusdi.PostgreSQL.Testing"/>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="xunit"/>
+    <PackageReference Include="Microsoft.NET.Test.Sdk"/>
+    <PackageReference Include="Microsoft.CodeCoverage"/>
+    <PackageReference Include="xunit.runner.visualstudio"/>
+    <PackageReference Include="Reqnroll.xUnit"/>
+    <PackageReference Include="Reqnroll"/>
+    <PackageReference Include="Reqnroll.Tools.MsBuild.Generation"/>
+    <PackageReference Include="coverlet.collector">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="JunitXml.TestLogger"/>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)\xunit.runner.json"
+             Link="xunit.runner.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)\reqnroll.json"
+         Link="reqnroll.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <RunSettingsFilePath>$(MSBuildThisFileDirectory)\.runsettings</RunSettingsFilePath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute" />
+  </ItemGroup>
+</Project>

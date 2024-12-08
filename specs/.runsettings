@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <RunConfiguration>
+    <EnvironmentVariables>
+      <SMUSDI_SERVICE_NAME>file-tree-scanner</SMUSDI_SERVICE_NAME>
+      <ASPNETCORE_ENVIRONMENT>Specflow</ASPNETCORE_ENVIRONMENT>
+      <MIGRATE_DATABASE>true</MIGRATE_DATABASE>
+    </EnvironmentVariables>
+  </RunConfiguration>
+</RunSettings>

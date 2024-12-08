@@ -1,0 +1,12 @@
+<Project>
+  <Import Project="$(MSBuildThisFileDirectory)\..\Directory.Build.props"/>
+
+  <ItemGroup>
+    <PackageReference Include="Smusdi.Testing"/>
+    <PackageReference Include="Smusdi.PostgreSQL.Testing"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute" />
+  </ItemGroup>
+</Project>

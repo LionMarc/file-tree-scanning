@@ -1,0 +1,28 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <smusdi-version>8.2.3</smusdi-version>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Smusdi -->
+    <PackageVersion Include="Smusdi.Core" Version="$(smusdi-version)" />
+    <PackageVersion Include="Smusdi.Testing" Version="$(smusdi-version)" />
+    <PackageVersion Include="Smusdi.PostgreSQL" Version="$(smusdi-version)" />
+    <PackageVersion Include="Smusdi.PostgreSQL.Testing" Version="$(smusdi-version)" />
+    <!-- Quality -->
+    <PackageVersion Include="StyleCop.Analyzers" Version="1.2.0-beta.556" />
+    <PackageVersion Include="SonarAnalyzer.CSharp" Version="10.3.0.106239" />
+    <!-- Tests -->
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
+    <PackageVersion Include="Microsoft.CodeCoverage" Version="17.9.0"/>
+    <PackageVersion Include="xunit" Version="2.7.0" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="2.5.7" />
+    <PackageVersion Include="JunitXml.TestLogger" Version="3.0.114"/>
+    <PackageVersion Include="coverlet.collector" Version="6.0.2" />
+    <PackageVersion Include="Reqnroll" Version="1.0.1" />
+    <PackageVersion Include="Reqnroll.Tools.MsBuild.Generation" Version="1.0.1" />
+    <PackageVersion Include="Reqnroll.xUnit" Version="1.0.1" />
+    <!-- Logging -->
+    <PackageVersion Include="SerilogTimings" Version="3.1.0" />
+  </ItemGroup>
+</Project>

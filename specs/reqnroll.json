@@ -1,0 +1,20 @@
+{
+  "stepAssemblies": [
+    {
+      "assembly": "Smusdi.Testing"
+    },
+    {
+      "assembly": "Smusdi.PostgreSQL.Testing"
+    },
+    {
+      "assembly": "FileTreeScanner.Testing"
+    }
+  ],
+  "livingDocGenerator": {
+    "enabled": true,
+    "filePath": "../../TestExecution.json"
+  },
+  "generator": {
+    "addNonParallelizableMarkerForTags": [ "postgresql" ]
+  }
+}

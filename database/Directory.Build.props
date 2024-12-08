@@ -1,0 +1,6 @@
+<Project>
+  <ItemGroup>
+    <PackageReference Include="Smusdi.Core"/>
+    <PackageReference Include="Smusdi.PostgreSQL"/>
+  </ItemGroup>
+</Project>

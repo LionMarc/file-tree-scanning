@@ -1,0 +1,108 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileTreeScanner", "src\FileTreeScanner\FileTreeScanner.csproj", "{A199D1F8-B3B1-4C3B-A7FA-487498249668}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_build", "_build", "{7CCE2D75-6229-4D90-B1AE-A32111EFEEE1}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		appsettings.props = appsettings.props
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+		.config\dotnet-tools.json = .config\dotnet-tools.json
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_database", "_database", "{23E56E3B-393B-473F-A35E-10F1909747DD}"
+	ProjectSection(SolutionItems) = preProject
+		database\add-migration.bat = database\add-migration.bat
+		database\init-env.bat = database\init-env.bat
+		database\remove-last-migration.bat = database\remove-last-migration.bat
+		database\update-database.bat = database\update-database.bat
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostgreSqlMigration", "database\PostgreSqlMigration\PostgreSqlMigration.csproj", "{120147B2-E66F-45CE-ACCA-6C68E23C3986}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_appsettings", "_appsettings", "{2EC0D75B-56D9-45C5-81B5-3C88EC3148D2}"
+	ProjectSection(SolutionItems) = preProject
+		appsettings\appsettings.Development.json = appsettings\appsettings.Development.json
+		appsettings\appsettings.file-tree-scanner.json = appsettings\appsettings.file-tree-scanner.json
+		appsettings\appsettings.json = appsettings\appsettings.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "database", "database", "{165BEDFA-2E8F-4569-B97D-4E6215CDDC79}"
+	ProjectSection(SolutionItems) = preProject
+		database\Directory.Build.props = database\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "specs", "specs", "{174C0F92-EC6C-4C87-9D0F-19B8FAE762C3}"
+	ProjectSection(SolutionItems) = preProject
+		specs\Directory.Build.props = specs\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{46494D62-FAB7-4192-894E-5956E36F356D}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Build.props = src\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_testing", "_testing", "{42BDC74F-691A-4BDB-943E-23EB85749C63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "testing", "testing", "{8AB63397-B907-44C7-BDA7-2DA94643F31B}"
+	ProjectSection(SolutionItems) = preProject
+		testing\Directory.Build.props = testing\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileTreeScanner.Testing", "testing\FileTreeScanner.Testing\FileTreeScanner.Testing.csproj", "{D85606A1-1501-4EF0-9985-9545FF6ED176}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "specs", "specs", "{C146AC81-3318-4C72-A210-A7A9A3A62DF5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_settings", "_settings", "{F374E169-03A6-4ADD-B121-4E2F2756553A}"
+	ProjectSection(SolutionItems) = preProject
+		specs\.runsettings = specs\.runsettings
+		specs\reqnroll.json = specs\reqnroll.json
+		specs\xunit.runner.json = specs\xunit.runner.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileTreeScanning", "src\FileTreeScanning\FileTreeScanning.csproj", "{30C9484B-EFF8-49E0-8189-BC20E3A16095}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A199D1F8-B3B1-4C3B-A7FA-487498249668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A199D1F8-B3B1-4C3B-A7FA-487498249668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A199D1F8-B3B1-4C3B-A7FA-487498249668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A199D1F8-B3B1-4C3B-A7FA-487498249668}.Release|Any CPU.Build.0 = Release|Any CPU
+		{120147B2-E66F-45CE-ACCA-6C68E23C3986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{120147B2-E66F-45CE-ACCA-6C68E23C3986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{120147B2-E66F-45CE-ACCA-6C68E23C3986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{120147B2-E66F-45CE-ACCA-6C68E23C3986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D85606A1-1501-4EF0-9985-9545FF6ED176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D85606A1-1501-4EF0-9985-9545FF6ED176}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D85606A1-1501-4EF0-9985-9545FF6ED176}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D85606A1-1501-4EF0-9985-9545FF6ED176}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30C9484B-EFF8-49E0-8189-BC20E3A16095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30C9484B-EFF8-49E0-8189-BC20E3A16095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30C9484B-EFF8-49E0-8189-BC20E3A16095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30C9484B-EFF8-49E0-8189-BC20E3A16095}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{120147B2-E66F-45CE-ACCA-6C68E23C3986} = {23E56E3B-393B-473F-A35E-10F1909747DD}
+		{165BEDFA-2E8F-4569-B97D-4E6215CDDC79} = {7CCE2D75-6229-4D90-B1AE-A32111EFEEE1}
+		{174C0F92-EC6C-4C87-9D0F-19B8FAE762C3} = {7CCE2D75-6229-4D90-B1AE-A32111EFEEE1}
+		{46494D62-FAB7-4192-894E-5956E36F356D} = {7CCE2D75-6229-4D90-B1AE-A32111EFEEE1}
+		{8AB63397-B907-44C7-BDA7-2DA94643F31B} = {7CCE2D75-6229-4D90-B1AE-A32111EFEEE1}
+		{D85606A1-1501-4EF0-9985-9545FF6ED176} = {42BDC74F-691A-4BDB-943E-23EB85749C63}
+		{F374E169-03A6-4ADD-B121-4E2F2756553A} = {C146AC81-3318-4C72-A210-A7A9A3A62DF5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2BABC9C8-DC9A-482E-84B1-06B0F97D1FAC}
+	EndGlobalSection
+EndGlobal

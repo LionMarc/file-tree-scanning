@@ -1,0 +1,5 @@
+﻿<Project>
+  <PropertyGroup>
+    <ConfigFilesFolder>$(MSBuildThisFileDirectory)\\appsettings</ConfigFilesFolder>
+  </PropertyGroup>
+</Project>

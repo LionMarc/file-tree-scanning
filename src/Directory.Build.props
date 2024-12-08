@@ -1,0 +1,16 @@
+<Project>
+  <Import Project="$(MSBuildThisFileDirectory)\..\Directory.Build.props"/>
+
+  <ItemGroup>
+    <PackageReference Include="Smusdi.Core"/>
+    <PackageReference Include="Smusdi.PostgreSQL"/>
+    <!-- Logging -->
+    <PackageReference Include="SerilogTimings" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="PostgreSqlMigration"/>
+    <InternalsVisibleTo Include="$(AssemblyName).Specs"/>
+    <InternalsVisibleTo Include="FileTreeScanner.Testing"/>
+  </ItemGroup>
+</Project>

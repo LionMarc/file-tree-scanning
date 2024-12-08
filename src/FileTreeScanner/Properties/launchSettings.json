@@ -1,0 +1,19 @@
+{
+  "profiles": {
+    "from-vs": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "SMUSDI_APPSETTINGS_FOLDER": "$(ConfigFilesFolder)",
+        "SMUSDI_SERVICE_NAME": "file-tree-scanner",
+        "SMUSDI_OAUTH_URL": "host.docker.internal:8080",
+        "MIGRATE_DATABASE": "true",
+        "POSTGRES_HOST": "localhost",
+        "POSTGRES_DB": "smusdi",
+        "POSTGRES_USER": "smusdi",
+        "POSTGRES_PASSWORD": "smusdi",
+        "POSTGRES_PORT": "5432"
+      }
+    }
+  }
+}
